@@ -77,5 +77,22 @@
   <footer>
     <p>&copy; 2025 PowerElecEnergie - Tous droits réservés.</p>
   </footer>
+
+  <script>
+  const carousel = document.querySelector(".carousel-images");
+  const images = document.querySelectorAll(".carousel-images img");
+  let index = 0;
+
+  document.querySelector(".next").addEventListener("click", () => {
+    index = (index + 1) % images.length;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+  document.querySelector(".prev").addEventListener("click", () => {
+    index = (index - 1 + images.length) % images.length;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  });
+</script>
+
 </body>
 </html>
