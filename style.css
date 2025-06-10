@@ -1,24 +1,22 @@
-/* Reset */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f9fa;
+  background-color: #f5f5f5;
   color: #222;
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  background-color: #003049;
+  background-color: #004e92;
   padding: 20px 0;
   color: white;
 }
-
 .container {
   max-width: 1100px;
   margin: auto;
@@ -27,47 +25,31 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.logo img {
-  height: 50px;
-}
-
 nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
 }
-
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-
 nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero section */
+/* Hero */
 .hero {
   background: url('images/bg-electric.jpg') no-repeat center/cover;
-  text-align: center;
   padding: 80px 20px;
+  text-align: center;
   color: white;
-  background-color: #003049;
 }
-
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
-
 .hero p {
   font-size: 1.2rem;
 }
@@ -78,69 +60,57 @@ nav a:hover {
   background-color: white;
   text-align: center;
 }
-
 .services-grid {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 30px;
+  justify-content: space-around;
   gap: 30px;
+  margin-top: 30px;
 }
-
-.services-grid div {
-  width: 150px;
-}
-
 .services-grid img {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
 }
 
-/* Gallery - Carrousel amélioré */
+/* Gallery – version JBelec colors */
 #gallery {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  background-color: #ffffff;
 }
-
 #gallery h2 {
-  color: #5a2ca0;
+  color: #004e92;
   font-size: 2em;
   margin-bottom: 20px;
 }
-
 .carousel {
   position: relative;
   max-width: 800px;
   margin: auto;
   overflow: hidden;
-  border: 4px solid #ff7e00;
+  border: 4px solid #ff8000; /* Orange vif */
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(90, 44, 160, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 78, 146, 0.2); /* Ombre légèrement bleutée */
 }
-
 .carousel-images {
   display: flex;
   transition: transform 0.6s ease-in-out;
 }
-
 .carousel-images img {
   width: 100%;
   flex-shrink: 0;
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
-
 .carousel-images img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
-
 .carousel button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(90, 44, 160, 0.6);
+  background-color: rgba(0, 78, 146, 0.8); /* Bleu profond semi-transparent */
   color: white;
   border: none;
   padding: 12px 16px;
@@ -150,23 +120,16 @@ nav a:hover {
   z-index: 10;
   transition: background-color 0.3s ease;
 }
-
 .carousel button:hover {
-  background-color: #ff7e00;
+  background-color: #ff8000; /* Devient orange au survol */
 }
-
-.carousel .prev {
-  left: 16px;
-}
-
-.carousel .next {
-  right: 16px;
-}
+.carousel .prev { left: 16px; }
+.carousel .next { right: 16px; }
 
 /* About */
 #about {
   padding: 50px 20px;
-  background-color: #e9ecef;
+  background-color: #eef2f5;
   text-align: center;
 }
 
@@ -176,18 +139,8 @@ nav a:hover {
   background-color: white;
   text-align: center;
 }
-
-#contact ul {
-  list-style: none;
-  margin-top: 20px;
-}
-
-#contact li {
-  margin: 8px 0;
-}
-
 .btn-whatsapp {
-  background-color: #25D366;
+  background-color: #ff8000;
   color: white;
   padding: 12px 20px;
   border-radius: 5px;
@@ -196,14 +149,20 @@ nav a:hover {
   display: inline-block;
   margin-top: 15px;
 }
-
 .btn-whatsapp:hover {
-  background-color: #1da851;
+  background-color: #e67300;
+}
+#contact ul {
+  list-style: none;
+  margin-top: 20px;
+}
+#contact li {
+  margin: 8px 0;
 }
 
 /* Footer */
 footer {
-  background-color: #003049;
+  background-color: #004e92;
   color: white;
   text-align: center;
   padding: 15px;
